@@ -9,4 +9,12 @@ public class JwtController {
     public  String Print(){
         return "Helloword";
     }
+//    @GetMapping("/admin/hello")
+//    public String  sayAdmin(String name){
+//        return "Hello Admin" + name;
+//    }
+    @GetMapping("/admin/hello")
+    public String sayAdminHello(String name) {
+        return "Hello Admin "+name;
+    }
 }
